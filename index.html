@@ -4,17 +4,21 @@
 	<meta charset="UTF-8"> <!-- Meta tag. Specifies the character encoding for the webpage. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag. Configures the viewport to adapt to screen size. -->
 	<title>Kaiju Networking</title>
-	<style> /* The <style> tag and its contents are CSS rules, so their comments have different syntax. */
-		ul {
-			list-style: none; /* Removes bullet points from the unordered lists. The forward slash with asterisk is used for CSS comments. */
-			padding-left: 20px; /* Changes the level of indentation. The forward slash with asterisk is used for CSS comments. */
+	<style> /* CSS rule tag. Defines different language which uses different syntax from HTML. */
+		ul { /* CSS rule. Styles the "u1" unordered list. */
+			list-style: none; /* Removes bullet points from the unordered lists. The forward slash with asterisk is used for comments inside CSS. */
+			padding-left: 20px; /* Changes the level of indentation. The forward slash with asterisk is used for comments inside CSS. */
+		}
+		.footer-text { /* CSS rule. Styles the "footer-text" class. */
+			font-size: 0.8em; /* Makes "footer-text" smaller than size of the parent element's font size. */
+			color: gray; /* Sets text color to gray. */
 		}
 	</style>
 </head>
-	<h1>Hello, I'm Eugene Fitzpatrick</h1> <!-- Heading tag. Defines the heading. 1 is the most important, higher numbers are less important. -->
-	<body>
-	<h2>About Me</h2>
-		<p>
+	<h1>Hello, I'm Eugene Fitzpatrick</h1> <!-- Top level heading tag. Defines the heading. 1 is the most important, higher numbers are less important. -->
+<body>
+	<h2>About Me</h2> <!-- Level 2 heading tag. -->
+		<p> <!-- Paragraph element -->
 			I'm an emerging IT professional and network security specialist with a love for both fundamental and novel technologies.
 		</p>
 	<h2>What I'm Working On</h2>
@@ -22,9 +26,9 @@
 			I am currently honing my knowledge of Networking, RFID, and Software Defined Radio technology before I commit to learning about Python and Pentesting fundamentals.
 		</p>
 	<h2>Major Certifications</h2>
-		<ul>
+		<ul> <!-- Unordered list tag. Defines an ordered list. Using <li> defines list items. -->
 			<li><a href="https://www.credly.com/badges/73eaee5a-b460-4994-8471-4190b3f85c34/public_url">CompTIA Security+ ce</a></li> <!-- Hyperlink to credly badge, URL text replaced by name of certification. -->
-			<li><a href="https://www.credly.com/badges/2131615a-d2bd-487f-803e-4f9e3fa56e54/public_url">AWS Certified Cloud Practitioner</a></li> <!-- Hyperlink to credly badge, URL text replaced by name of certification. -->
+			<li><a href="https://www.credly.com/badges/2131615a-d2bd-487f-803e-4f9e3fa56e54/public_url">AWS Certified Cloud Practitioner</a></li>
 		</ul>
 	<h2>Trainings</h2>
 		<ul>
@@ -36,6 +40,6 @@
 			<li>CompTIA Security+</li>
 			<li>RHCSA Linux System Administration</li>
 		</ul>
-		<small>Copyright © 2024 Kaiju Networking - All Rights Reserved.</small>
-	</body>
+		<p class="footer-text">Copyright @ 2024 Kaiju Networking - All Rights Reserved.</p> <!-- Paragraph element containing a Class Attribute. Class attribute applies style defined by CSS. -->
+</body>
 </html>
