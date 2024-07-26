@@ -5,35 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag. Configures the viewport to adapt to screen size. -->
 	<title>Kaiju Networking</title>
 	<style> /* CSS rule tag. Defines different language which uses different syntax from HTML. */
+
+		/* CSS Rule. Styles the HTML and body elements. */
 		html, body {
 			height: 100%; /* Forces HTML and body elements to take up full height of viewport. */
-			margin: 0; /* Removes default margin. */
+			margin: 10; /* Adjusts margin. */
+			overflow-x: hidden; /* Prevents horizontal scrolling. */
 		}
 
+		/* CSS Rule. Styles the container div. */
 		.container {
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh; /* Forces the container to take up the full height of the viewport. */
 		}
-
+		
+		/* CSS Rule. Styles the content div. */
 		.content {
 			flex: 1; /* Take up remaining space. */
 		}
-		
+
+		/* CSS Rule. Styles the footer div. */
 		.footer {
 			width: 100%; /* Forces footer to take up full width of the container. */
 			background-color: #f1f1f1;
 			padding: 10px;
 			text-align: center;
+			box-sizing: border-box; /* Include padding and border in the element's total width and height */
 		}
 		
-		/* CSS rule. Styles the "footer-text" class. */
+		/* CSS Rule. Styles the "footer-text" class. */
 		.footer-text {
 			font-size: 0.8em; /* Makes "footer-text" 80% smaller than size of the parent element's font size. */
 			color: gray; /* Sets text color to gray. */
 		}
 		
-		/* CSS rule. Styles the "u1" unordered list. */
+		/* CSS Rule. Styles the "u1" unordered list. */
 		ul {
 			list-style: none; /* Removes bullet points from the unordered lists. The forward slash with asterisk is used for comments inside CSS. */
 			padding-left: 20px; /* Changes the level of indentation. The forward slash with asterisk is used for comments inside CSS. */
