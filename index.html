@@ -12,26 +12,29 @@
 
 		.container {
 			display: flex;
-			flex-direction: columnm;
-			min-height: 100vh; /* Ensure the container takes up the full height of the viewport. */
+			flex-direction: column;
+			min-height: 100vh; /* Forces the container to take up the full height of the viewport. */
 		}
 
 		.content {
-			flex: 1; /* Take up remaing space. */
+			flex: 1; /* Take up remaining space. */
 		}
 		
 		.footer {
 			background-color: #f1f1f1;
 			padding: 10px;
-			text-align: centerl;
+			text-align: center;
+			width: 100%; /* Forces footer to take up full width of the container. */
 		}
 		
-		.footer-text { /* CSS rule. Styles the "footer" class. */
+		/* CSS rule. Styles the "footer" class. */
+		.footer-text {
 			font-size: 0.8em; /* Makes "footer" smaller than size of the parent element's font size. */
 			color: gray; /* Sets text color to gray. */
 		}
-
-		ul { /* CSS rule. Styles the "u1" unordered list. */
+		
+		/* CSS rule. Styles the "u1" unordered list. */
+		ul {
 			list-style: none; /* Removes bullet points from the unordered lists. The forward slash with asterisk is used for comments inside CSS. */
 			padding-left: 20px; /* Changes the level of indentation. The forward slash with asterisk is used for comments inside CSS. */
 		}
