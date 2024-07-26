@@ -5,18 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag. Configures the viewport to adapt to screen size. -->
 	<title>Kaiju Networking</title>
 	<style> /* CSS rule tag. Defines different language which uses different syntax from HTML. */
+		html, body {
+			height: 100%; /* Forces HTML and body elements to take up full height of viewport. */
+			margin: 0; /* Removes default margin. */
+		}
+
+		.container {
+			display: flex;
+			flex-direction: columnm;
+			min-height: 100vh; /* Ensure the container takes up the full height of the viewport. */
+		}
+
+		.content {
+			flex: 1; /* Take up remaing space. */
+		}
+		
+		.footer {
+			background-color: #f1f1f1;
+			padding: 10px;
+			text-align: centerl;
+		}
+		
+		.footer-text { /* CSS rule. Styles the "footer" class. */
+			font-size: 0.8em; /* Makes "footer" smaller than size of the parent element's font size. */
+			color: gray; /* Sets text color to gray. */
+		}
+
 		ul { /* CSS rule. Styles the "u1" unordered list. */
 			list-style: none; /* Removes bullet points from the unordered lists. The forward slash with asterisk is used for comments inside CSS. */
 			padding-left: 20px; /* Changes the level of indentation. The forward slash with asterisk is used for comments inside CSS. */
-		}
-		.footer-text { /* CSS rule. Styles the "footer-text" class. */
-			font-size: 0.8em; /* Makes "footer-text" smaller than size of the parent element's font size. */
-			color: gray; /* Sets text color to gray. */
 		}
 	</style>
 </head>
 	<h1>Hello, I'm Eugene Fitzpatrick</h1> <!-- Top level heading tag. Defines the heading. 1 is the most important, higher numbers are less important. -->
 <body>
+	<div class="container">
+		<div class="content">
 	<h2>About Me</h2> <!-- Level 2 heading tag. -->
 		<p> <!-- Paragraph element -->
 			I'm an emerging IT professional and network security specialist with a love for both fundamental and novel technologies.
@@ -40,6 +64,10 @@
 			<li>CompTIA Security+</li>
 			<li>RHCSA Linux System Administration</li>
 		</ul>
+		</div>
+		<div class="footer">
 		<p class="footer-text">Copyright @ 2024 Kaiju Networking - All Rights Reserved.</p> <!-- Paragraph element containing a Class Attribute. Class attribute applies style defined by CSS. -->
+		</div>
+	</div>
 </body>
 </html>
