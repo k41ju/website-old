@@ -8,12 +8,14 @@
 		html, body {
 			height: 100%; /* Forces HTML and body elements to take up full height of viewport. */
 			margin: 0; /* Removes default margin. */
+			overflow-x: hidden; /* Prevents horizontal scrolling. */
 		}
 
 		.container {
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh; /* Forces the container to take up the full height of the viewport. */
+			box-sizing: border-box; /* Include padding and border in the element's total width and height. */
 		}
 
 		.content {
@@ -25,6 +27,7 @@
 			padding: 10px;
 			text-align: center;
 			width: 100%; /* Forces footer to take up full width of the container. */
+			box-sizing: border-box; 
 		}
 		
 		/* CSS rule. Styles the "footer" class. */
