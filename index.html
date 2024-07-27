@@ -10,7 +10,7 @@
 		html, body {
 			height: 100%; /* Forces HTML and body elements to take up full height of viewport. */
 			margin: 10; /* Adjusts margin. */
-			overflow: hidden; /* Prevents horizontal scrolling. */
+			overflow-x: hidden; /* Prevents horizontal scrolling. */
 		}
 
 		/* CSS Rule. Styles the container div. */
@@ -18,12 +18,12 @@
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh; /* Forces the container to take up the full height of the viewport. */
-			box-sizing: border-box; /* Include padding and border in the element's total width and height */
 		}
 		
 		/* CSS Rule. Styles the content div. */
 		.content {
 			flex: 1; /* Take up remaining space. */
+			padding: 20px; /* Add some padding */
 		}
 
 		/* CSS Rule. Styles the footer div. */
@@ -32,7 +32,6 @@
 			background-color: #f1f1f1;
 			padding: 10px;
 			text-align: center;
-			box-sizing: border-box; /* Include padding and border in the element's total width and height */
 		}
 		
 		/* CSS Rule. Styles the "footer-text" class. */
