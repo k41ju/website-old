@@ -4,13 +4,13 @@
 	<meta charset="UTF-8"> <!-- Meta tag. Specifies the character encoding for the webpage. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag. Configures the viewport to adapt to screen size. -->
 	<title>Kaiju Networking</title>
-	<style> /* CSS rule tag. Defines different language which uses different syntax from HTML. */
+	<style> /* CSS Rule Tag. Defines different language which uses different syntax from HTML. */
 
 		/* CSS Rule. Styles the HTML and body elements. */
 		html, body {
 			height: 100%; /* Forces HTML and body elements to take up full height of viewport. */
 			margin: 10; /* Adjusts margin. */
-			overflow-x: hidden; /* Prevents horizontal scrolling. */
+			overflow: hidden; /* Prevents horizontal scrolling. */
 		}
 
 		/* CSS Rule. Styles the container div. */
@@ -18,6 +18,7 @@
 			display: flex;
 			flex-direction: column;
 			min-height: 100vh; /* Forces the container to take up the full height of the viewport. */
+			box-sizing: border-box; /* Include padding and border in the element's total width and height */
 		}
 		
 		/* CSS Rule. Styles the content div. */
